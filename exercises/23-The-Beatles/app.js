@@ -1,5 +1,22 @@
+var loopLyrics1 = '';
+var beatles1 = 'whisper words of wisdom, ';
+var loopLyrics2 = '';
+var beatles2 = 'there will be an answer,';
 
 
-//Your code above ^^^
+function sing(){
+    var letItBeLyrics = 'let it be, ';
+    for (var i = 1; i < 5; i++){
+        loopLyrics1 += letItBeLyrics;
+    }
 
-console.log('let it be, let it be, let it be, let it be, whisper words of wisdom, let it be, let it be, let it be, let it be, let it be, there will be an answer, let it be');
+    for (var i = 1; i < 6; i++){
+        loopLyrics2 += letItBeLyrics;
+    }
+}
+sing();
+
+var beatlesString = loopLyrics1 + beatles1 + loopLyrics2 + beatles2 + ' let it be';
+
+
+console.log(beatlesString);

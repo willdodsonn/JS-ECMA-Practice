@@ -1,30 +1,28 @@
 // Your code here:
-var bottles = "bottles";
-var bottles2 = "bottle";
-var bottlesRemaining = " of milk on the wall";
-var bottlesRemaining2 = "No bottles of milk on the wall"; 
-var takeOne = "Take one down, pass it around,";
+const bottles = "bottles";
+const bottle = "bottle";
+const onTheWall = " of milk on the wall";
+const noBottles= "No bottles of milk on the wall"; 
+const takeOne = "Take one down, pass it around,";
+const goToStore = "go to the store and by some more.";
 
 
 function bottlesOfMilk() {  
     
-    for (i = 99; i >= 1; i--) {
-        if (i == 1) {
-            bottles = bottles2;
-            bottlesRemain = bottlesRemaining2;
-      } 
-      else {
-            bottlesRemain = i - 1 + bottlesRemaining;
-            bottles = " "; 
-      } 
-      bottlesOfMilk();
+    for (var i = 99; i >= 0; i--) {
+        if (i == 0){
+            console.log(0);
+        }
+        else if (i == 1) {
+            console.log(1);
+        } 
+        else {
+            console.log(i + bottles + onTheWall + i + bottles + 'of milk.' + takeOne + (i - 1) + bottles + onTheWall
+            );
+            //console.log(i + bottles + onTheWall + i + bottles + 'of milk.' + takeOne + i - 1 + bottles + onTheWall);
+        } 
+     }
+}   
 
-      var milkString = i + " " + bottlesRemaining + takeOne + bottles2 + bottlesRemaining2;
 
-
-
-
-     
-      
-  }
-  console.log(milkString);
+bottlesOfMilk();

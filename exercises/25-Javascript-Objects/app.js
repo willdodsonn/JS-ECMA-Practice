@@ -35,18 +35,20 @@ var family = {
 //Enter all your code here:
 family.members[0].lucky_numbers[3] = 33;
 
-
 function addAllFamilyLuckyNumbers(anArrayOfFamilyMembers){
-  var sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
+  var sumOfAllLuckyNumbers = 0; 
+
+  //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
   for (let i = 0; i < anArrayOfFamilyMembers.length; i++) {
     const familyMember = anArrayOfFamilyMembers[i];
+    
     for(let j = 0; j < familyMember.lucky_numbers.length; j++) {
         const luckyNumber = familyMember.lucky_numbers[j]; 
         sumOfAllLuckyNumbers += luckyNumber;
     }
   
-  return sumOfAllLuckyNumbers;
-}
+    }
+    return sumOfAllLuckyNumbers;
 }   
 
 //Do not make changes below:
